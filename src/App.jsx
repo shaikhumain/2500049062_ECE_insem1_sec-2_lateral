@@ -1,9 +1,6 @@
-import React from 'react';
-
-//Student Component
 function Student(props) {
   return (
-    <div>
+    <div className="student-card">
       <h2>Student Attendance Details</h2>
       <p>Student Name: {props.name}</p>
       <p>Student ID: {props.id}</p>
@@ -13,10 +10,9 @@ function Student(props) {
   );
 }
 
-// Main App Component
 function App() {
   return (
-    <div>
+    <div className="app">
       <h1>Student Attendance Tracker</h1>
 
       <Student
