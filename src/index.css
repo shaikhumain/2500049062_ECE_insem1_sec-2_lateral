@@ -1,0 +1,104 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Main App */
+.app {
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+}
+
+/* Main Heading */
+.app h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* Student Card */
+.student-card {
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 35px;
+  max-width: 420px;
+  margin: auto;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  transition: 0.4s ease;
+}
+
+/* Hover Effect */
+.student-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Student Heading */
+.student-card h2 {
+  font-size: 23px;
+  color: #64dfdf;
+  margin-bottom: 25px;
+}
+
+/* Student Details */
+.student-card p {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 13px;
+  margin: 12px 0;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 15px;
+  color: #eaf4f4;
+  transition: 0.3s;
+}
+
+/* Detail Hover */
+.student-card p:hover {
+  background: rgba(100, 223, 223, 0.15);
+  transform: translateX(5px);
+}
+
+/* Attendance Highlight */
+.student-card p:last-child {
+  background: linear-gradient(90deg, #11998e, #38ef7d);
+  color: #102a24;
+  font-weight: 700;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .app h1 {
+    font-size: 24px;
+  }
+
+  .student-card {
+    padding: 22px;
+  }
+
+  .student-card h2 {
+    font-size: 19px;
+  }
+}
